@@ -1,0 +1,80 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>American Darling Training Center</title>
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="orders.html">Orders</a>
+      <a href="rma.html">RMAs</a>
+      <a href="returns.html">Returns</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="logo-placeholder">
+      <img src="images/ADLogo.jpg" />
+    </div>
+
+    <div class="content">
+      <h1>Contact Us</h1>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <select id="location" name="location">
+            <option value="rosenberg">Rosenberg</option>
+            <option value="back-office">Back Office</option>
+            <option value="warehouse">Warehouse</option>
+            <option value="showroom">Showroom</option>
+            <option value="sales-team">Sales Team</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="issue">What is wrong:</label>
+          <textarea id="issue" name="issue" maxlength="255" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Is the issue urgent?</label>
+          <div class="radio-group">
+            <input type="radio" id="urgent-yes" name="urgent" value="yes" />
+            <label for="urgent-yes">Yes</label>
+            <input type="radio" id="urgent-no" name="urgent" value="no" />
+            <label for="urgent-no">No</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="ticket">Has a ticket been submitted?</label>
+          <label for="ticket-yes">Yes</label>
+          <input type="checkbox" id="ticket-yes" name="ticket" />
+          <label for="ticket-no">No</label>
+          <input type="checkbox" id="ticket-no" name="ticket" />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer class="footer">&copy; 2024 Anthony Upchurch</footer>
+  </body>
+</html>
